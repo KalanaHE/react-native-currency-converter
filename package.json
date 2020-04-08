@@ -10,8 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@expo/vector-icons": "6.2.0",
+    "@expo/vector-icons": "^6.2.0",
     "color": "3.0.0",
+    "lodash": "^4.17.15",
     "moment": "2.18.1",
     "react": "16.9.0",
     "react-native": "0.61.5",
