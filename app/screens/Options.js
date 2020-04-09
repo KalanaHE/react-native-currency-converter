@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {ScrollView, StatusBar} from 'react-native';
-
+import PropTypes from 'prop-types';
 import {ListItem, Separator} from '../components/List';
 
 // import {Ionicons} from '@expo/vector-icons';
@@ -9,8 +9,14 @@ import {ListItem, Separator} from '../components/List';
 // const ICON_SIZE = 23;
 
 class Options extends Component {
+
+  static propTypes = {
+    navigation: PropTypes.object,
+  }
+
   handleThemePress = () => {
     console.log('Theme press');
+    this.props.navigation.navigate('Themes');
   };
 
   handleSitePress = () => {
