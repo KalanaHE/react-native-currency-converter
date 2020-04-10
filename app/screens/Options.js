@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {ScrollView, StatusBar} from 'react-native';
+import {ScrollView, StatusBar, Linking} from 'react-native';
 import PropTypes from 'prop-types';
 import {ListItem, Separator} from '../components/List';
 
@@ -21,6 +21,7 @@ class Options extends Component {
 
   handleSitePress = () => {
     console.log('Site Press');
+    Linking.openURL('https://www.linkedin.com/in/kalanahe/').catch(()=>alert('An error occured!'));
   };
 
   render() {
@@ -36,7 +37,7 @@ class Options extends Component {
         />
         <Separator />
         <ListItem
-          text="Fixer.io"
+          text="About me"
           onPress={this.handleSitePress}
           //   customIcon={
           //     <Ionicons name="md-checkmark-circle" size={32} color="green" />
